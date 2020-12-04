@@ -23,6 +23,7 @@
             min-width: initial;
             background: none repeat scroll 0 0 #fff;
             color: #000;
+            font-family: "STSong-Light","Microsoft YaHei",WenQuanYi Micro Hei,"Heiti SC","Lucida Sans Unicode","Myriad Pro","Hiragino Sans GB",Verdana,simsun;
             font-size: 13px;
             min-height: 100%;
             min-width: 1080px;
@@ -211,7 +212,7 @@
         }
     </style>
 </head>
-<body>
+<body style = "font-family: STSong-Light;" >
 <div class="container">
     <div class="main">
         <div class="form-table">
@@ -227,7 +228,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputName">姓名</label>
-                    <span class="content-line ${lineStyle?default("")}">&nbsp;&nbsp;&nbsp;${name}&nbsp;&nbsp;&nbsp;</span>
+                    <span class="content-line ${lineStyle?default("")}">&nbsp;&nbsp;&nbsp;${name}&nbsp;&nbsp;&nbsp;王立湧</span>
                 </div>
             </form>
         </div>

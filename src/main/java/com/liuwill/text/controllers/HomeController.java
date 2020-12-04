@@ -39,9 +39,9 @@ public class HomeController {
     @RequestMapping(value = "/download", method = RequestMethod.GET)
     public ModelAndView downloadForm() {
         Map<String,Object> globalModel = new HashMap<>();
-        globalModel.put("mobile", GlobalConfig.readProperty("form.mobile"));
-        globalModel.put("email", GlobalConfig.readProperty("form.email"));
-        globalModel.put("name", GlobalConfig.readProperty("form.name"));
+        globalModel.put("mobile", "英吹丝挺\u7121\u540d");
+        globalModel.put("email", "\u5341\u950a\u57cb\u4f0f");
+        globalModel.put("name", "王立湧");
         globalModel.put("mode", "pdf");
 
         // return a view which will be resolved by an excel view resolver

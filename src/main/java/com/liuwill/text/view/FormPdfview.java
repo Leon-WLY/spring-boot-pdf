@@ -32,7 +32,7 @@ public class FormPdfview extends AbstractITextPdfView {
         String htmlText = new String(html.getBytes("UTF-8"),"UTF-8");
 
        // XMLWorkerHelper.getInstance().parseXHtml(writer, document, new StringReader(htmlText));
-        XMLWorkerHelper.getInstance().parseXHtml(writer, document, new ByteArrayInputStream(html.getBytes()), Charset.forName("UTF-8"), new AsianFontProvider() );
+        XMLWorkerHelper.getInstance().parseXHtml(writer, document, new ByteArrayInputStream(html.getBytes("UTF-8")), Charset.forName("UTF-8"), new AsianFontProvider() );
     }
 
    /* private static final Font getChineseFont(float size) {

@@ -8,6 +8,7 @@ import freemarker.template.TemplateExceptionHandler;
 import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
@@ -34,7 +35,8 @@ public class FreemarkerUtils {
         Configuration cfg = new Configuration(Configuration.VERSION_2_3_22);
         try {
             cfg.setDirectoryForTemplateLoading(baseDir);
-            cfg.setDefaultEncoding("UTF-8");
+           // cfg.setDefaultEncoding("UTF-8");
+            cfg.setEncoding(Locale.CHINA, "UTF-8");
             cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);//.RETHROW
             cfg.setClassicCompatible(true);
             Template temp = cfg.getTemplate(fileName);

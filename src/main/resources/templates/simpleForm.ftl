@@ -23,7 +23,6 @@
             min-width: initial;
             background: none repeat scroll 0 0 #fff;
             color: #000;
-            font-family: "Microsoft YaHei",WenQuanYi Micro Hei,"Heiti SC","Lucida Sans Unicode","Myriad Pro","Hiragino Sans GB",Verdana,simsun;
             font-size: 13px;
             min-height: 100%;
             min-width: 1080px;

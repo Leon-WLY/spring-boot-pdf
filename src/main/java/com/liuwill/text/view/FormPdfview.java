@@ -26,7 +26,7 @@ public class FormPdfview extends AbstractITextPdfView {
     protected void buildPdfDocument(Map<String, Object> model,
                                     Document document, PdfWriter writer, HttpServletRequest request,
                                     HttpServletResponse response) throws Exception {
-        URL fileResource = FormPdfview.class.getResource("templates");
+        URL fileResource = FormPdfview.class.getResource("/templates");
         String html = FreemarkerUtils.loadFtlHtml(new File(fileResource.getFile()), "simpleForm.ftl", model);
 
         String htmlText = new String(html.getBytes("UTF-8"),"UTF-8");
